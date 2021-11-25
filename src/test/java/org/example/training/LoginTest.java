@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class LoginTest {
     private WebDriver driver;
@@ -21,7 +20,7 @@ public class LoginTest {
     }
 
     @Test
-    public void LoginTest() {
+    public void myLoginTest() {
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("username");
         driver.findElement(By.name("password")).sendKeys("password");
